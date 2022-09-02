@@ -1,3 +1,4 @@
-Hi from local
+Hi from local check
 
-git 
+git pull
+error: Your local changes to the following files 
