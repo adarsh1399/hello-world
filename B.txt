@@ -1,5 +1,7 @@
 Hi Lets solve confilct by git pull
 
+Follow the following steps
+
 git pull
 error: Your local changes to the following files 
 
