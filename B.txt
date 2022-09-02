@@ -2,3 +2,24 @@ Hi from local check
 
 git pull
 error: Your local changes to the following files 
+
+first add and commit the conflict files
+
+then run git pull command
+git pull
+
+now it shows like
+Automatic merge failed; fix conflicts and then commit the result.
+
+Now open the conflict file and solve the conflicts manually there
+
+After solving conflicts save the file and come back to git bash
+
+now again add and commit the solved the file 
+
+Now you can check git status ,
+It shows working tree is clean
+
+then git push
+
+Note :- We did two commits here ,So if we follow this step,In commits tab in remote you see two commits for this one push  
