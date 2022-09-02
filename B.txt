@@ -1,4 +1,4 @@
-Hi from local check
+Hi Lets solve confilct by git pull
 
 git pull
 error: Your local changes to the following files 
