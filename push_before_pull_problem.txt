@@ -1,7 +1,8 @@
-hi from remote
+------When commit is done befor pushing-----
 
-push from remote
+1. revert commit and unstagged chanes
+
+git reset HEAD~ 
 
 
-push
 
