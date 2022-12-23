@@ -4,5 +4,13 @@
 
 git reset HEAD~ 
 
+2. Undo commit and keep all the file stagged
+
+git reset --soft HEAD
+
+--To unstaged it use
+
+ git restore --staged <file name>
+
 
 
