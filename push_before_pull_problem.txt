@@ -8,9 +8,7 @@ git reset HEAD~
 
 git reset --soft HEAD~
 
---To unstaged it use
 
- git restore --staged <file name>
 
 
 
