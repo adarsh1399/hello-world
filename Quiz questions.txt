@@ -1,0 +1,135 @@
+
+Question 1
+
+What is the time complexity of below program?
+
+public class Test{
+	public static void main(String[] args)
+	{
+		for (let i = 0; i < n; i++) {
+			statement1;
+
+			for (let j = 0; j < n; j++) {
+				statement2;
+				statement3;
+			}
+			for (let j = 0; j < n; j++) {
+				statement4;
+				statement5;
+			}
+		}
+	}
+}
+
+a.O(n^2)
+b.O(n^3)
+c.O(1)
+d.O(log n)
+
+Answer -> a. O(n^2)
+Explanation->
+
+	T(n) = n * [t(statement1) + n * t(statement2...3)+ n * t(statement4...5)]
+	Thus O( n * n ) -> O ( n ^ 2 ) 
+
+
+Question 2
+
+Suresh is working on a Spring based Web Application. Generally, there are three ways to implement a core feature of Spring framework in your application. Below are the three ways:
+
+1) Using Annotation    
+2) Using XML configuration    
+3) Implementing Interfaces provided by Spring framework
+
+Which option is correct if Suresh wants to define Bean Lifecycle methods in your project:
+
+a. Only Option (1) 
+
+b. Option (1) & Option (2) 
+
+c. Option (2) & Option (3) 
+
+d. All three 
+
+Answer -> d. All three
+Explanation ->There are three ways to define bean life cycle methods: Annotation or XML configuration or Spring Interfaces.
+
+Question 3
+
+What is the correct postfix expression for the following expression?
+
+a+b*(c^d-e)^(f+g*h)-i
+
+a. abc^de-fg+*^*+i-
+b. abcde^-fg*+*^h*+i-
+c. abcd^e-fgh*+^*+i-
+d. ab^-dc*+ef^gh*+i-
+
+ Answer -> b.  abcde^-fg*+*^h*+i-
+ Explanation ->The postfix expression for the given infix expression is found to be "abcd^e-fgh*+^*+i-" when we use infix to postfix conversion algorithm.
+ 
+Question 4
+What is the output of the following program?
+
+public class Test 
+{
+    public static void main(String[] args) 
+    {
+        int a=11, b=22, c;
+         
+        c = a + b + a++ + b++ + ++a + ++b ;
+         
+        System.out.println(c);
+    }
+}
+
+a. 101
+b. 104
+c. 103
+d. 102
+
+Answe c. 103
+Explanation ->
+c = a + b + a++ + b++ + ++a + ++b;
+c = 11 + 22 + 11(a=12, b=22) + 22(a=12, b=23) + 13(a=13, b=23) + 24(a=13, b=24)
+c = 11 + 22 + 11 + 22 + 13 + 24 
+c = 103
+
+Question 5
+
+Complete the program?
+
+public class SecondMax {
+	
+	public static void main(String[] args)
+	{
+		int a[]=new int[] {1,2,9,6,4,7,0};
+		int max=-1;
+		int secondMax=-2;
+	
+		for(int i=0;i<a.length;i++)
+		{
+			if(a[i]>max)
+			{
+				secondMax=max;
+				max=a[i];
+			}
+			___________________//line 1
+			{
+				secondMax=a[i];
+			}
+		}
+		System.out.println(secondMax);
+	}
+}
+
+
+a. else if(max>a[i] && a[i]>secondMax)
+
+b. if(a[i]>secondMax) 
+
+c. else if(max>a[i])
+
+d. whileif(a[i]>secondMax)
+
+Answer -> a. else if(max>a[i] && a[i]>secondMax)
