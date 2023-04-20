@@ -1,0 +1,56 @@
+record keyword
+
+A record is a special type of class declaraton aimed at reducing the boilerplate code.Record is added as a preview feature(Preview feature means it may or may not be present in future).A record is a restricted form of a class. It's ideal for "plain data carriers" , means for the classes that contain data not meant to be altered.It is introduced in jdk 14.0.
+
+for example:- Consider  a Student class ,whose objective is to conatin Student's name and doteOFBirth and act as a data carrier to be transeferred across modules.
+
+// Without using record keyword
+class Student
+{
+	final String name
+	final String dateOfBirth
+
+	public Strudent(String name,String dateOfBirth)
+	{
+		this.name=name;
+		this.ateOfBirth=dateOfBirth;
+	}
+
+	public boolean equals(Object object)
+	{
+		//Implementation f equals method here
+	}
+
+	public Sting toString()
+	{
+		//Implementation of toString method here
+	}
+}
+
+//Using record keyword
+public record Stundent(String name,String dateOfBirth)
+
+1  line can reduce lots of boilerplate code .
+
+A record acquires these members automatically :-
+
+1.A private final field for each of its components
+2.A public constructor whose signature is derived from the record components list
+3.Implementations of the  equals() , hashCode() and toString()
+4.A public read accessors method for each component with same name and type()
+
+
+How to use record keyword:-
+
+Download jdk 14.0 first.Add it in IDE.As it is a preview feature , we need to enable them to use it in IDE.You can enable it by project Exploerer(right click on project) -> Properties -> Java Complier -> on left side, uncheck the settings with name 
+1."Use default compliance settings" 
+2. "Use compliance from execution environment 'JavaSE-14' on Java BUild PATH " and checked the settings with name 
+1."enable preview features for java 14"
+
+Now yo are able to use it.
+
+ 
+
+
+
+
